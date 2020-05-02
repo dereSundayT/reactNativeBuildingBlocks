@@ -5,7 +5,7 @@ import ListViewScrollView  from './workingWithListViewAndScrollView/App'
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListViewScrollView />
+      
     </View>
   );
 }
