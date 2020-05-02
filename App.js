@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import WorkingWithState from './workingwithstate/App';
+import WorkingWithTextInput  from './workingwithtextinput/App';
 export default function App() {
   return (
     <View style={styles.container}>
-      <WorkingWithState />
+      <WorkingWithTextInput />
     </View>
   );
 }
