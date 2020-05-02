@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
-import {StyleSheet, View, FlatList,Alert,Text} from 'react-native';
+import {StyleSheet, View, FlatList,Alert,Text,TouchableNativeFeedback,
+Keyboard} from 'react-native';
 import Header from './components/Header';
 import TodoItem from './components/TodoItem';
 import AddTodos from './components/addTodos';
@@ -33,6 +34,8 @@ const TodoApp = () => {
 
     } 
     return(
+        <TouchableNativeFeedback onPress={() =>
+        { Keyboard.dismiss()}}>
         <View style={styles.container}>
             {/*Header*/}
             <Header />
@@ -48,11 +51,10 @@ const TodoApp = () => {
                                 pressHandlerFunc={pressHandler} />
                         )}
                          />
-
                 </View>
             </View>
-
         </View>
+        </TouchableNativeFeedback>
 
     );
 }
